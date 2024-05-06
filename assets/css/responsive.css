@@ -1,0 +1,384 @@
+:root {
+  --background-overlay: rgba(3, 3, 3, 0.534);
+  --background-drawer: rgb(197, 197, 197);
+  --background-nav-hover: rgb(197, 197, 197);
+  --background-separate: rgb(123, 123, 123);
+  --color-close: #010101;
+}
+
+/* PC */
+@media (min-width: 992px) {
+  .tablet-mobile-header {
+    display: none;
+  }
+}
+
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  /*============================ Header ============================*/
+  /* hide nav */
+  .header__navbar {
+    display: none;
+  }
+
+  /* move logo center */
+  .header__body {
+    position: relative;
+  }
+
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu-header__icon {
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    left: 5px;
+  }
+
+  /* hide/visible menu overlay*/
+  .menu-overlay {
+    position: fixed;
+    background-color: var(--background-overlay);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* menu drawer */
+  .menu-drawer {
+    position: fixed;
+    padding: 60px;
+    inset: 0 40% 0 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    background-color: var(--background-drawer);
+    flex-shrink: 0;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  .menu-drawer__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-drawer__close {
+    width: 22px;
+    height: 18px;
+    color: var(--color-close);
+  }
+
+  #menu-drawer__navbar-list--mobile {
+    margin-top: 24px;
+  }
+
+  .header__navbar-link {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .header__navbar-link:hover {
+    background-color: var(--background-nav-hover);
+    border-radius: 10px;
+  }
+
+  /*============================ Hero ============================*/
+  .hero__body {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  .hero__img {
+    width: 100%;
+  }
+
+  .hero__content {
+    order: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 8px auto;
+  }
+
+  .hero__heading {
+    width: 64%;
+  }
+
+  .hero__desc {
+    width: 50%;
+  }
+
+  /*============================ Features ============================*/
+  /* Features top */
+  .features__top {
+    text-align: center;
+  }
+
+  .features__heading {
+    margin: 10px auto;
+  }
+
+  .features__desc {
+    margin: 9px auto;
+  }
+
+  /* Features bottom */
+  .feature__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .feature__item {
+    text-align: center;
+  }
+
+  .features__item-desc {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*============================ Popular ============================*/
+  /* Popular top */
+  .popular__content {
+    text-align: center;
+  }
+
+  .popular__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .popular__desc {
+    width: 73%;
+  }
+
+  /* Popular bottom */
+  .popular__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 150px;
+  }
+
+  /*============================ Popular ============================*/
+  .feedback__img {
+    display: none;
+  }
+
+  .feedback__content {
+    width: 100%;
+  }
+
+  .feedback__comment {
+    text-align: center;
+    margin: 27px auto 0;
+  }
+
+  .feedback__desc-student {
+    justify-content: center;
+  }
+
+  .feedback__control {
+    justify-content: center;
+  }
+
+  /*============================ Admit ============================*/
+  .admit__body {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .admit__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admit__desc {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768.98px) and (max-width: 991.98px) {
+  /*============================ Footer ============================*/
+  .footer__row-top {
+    display: grid;
+    grid-template-columns: 180px 150px 150px;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 60px;
+  }
+
+  .footer__link {
+    white-space: nowrap;
+  }
+
+  .menu-drawer__show-mobile {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  /*============================ Common ============================*/
+  .heading-lv2 {
+    font-size: 3rem;
+  }
+
+  /*============================ Menu drawer ============================*/
+  .menu-drawer {
+    padding: 40px;
+    inset: 0 20% 0 0;
+  }
+
+  .menu-header__icon {
+    top: -9px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__navbar-item {
+    list-style-type: none;
+  }
+
+  .menu-drawer__separate {
+    border-top: 2px solid var(--background-separate);
+    margin: 10px 0;
+  }
+
+  /*============================ Header ============================*/
+  .header {
+    padding: 70px 0px 30px;
+  }
+
+  .header__action {
+    display: none;
+  }
+
+  /*============================ Hero ============================*/
+  .hero {
+    padding: 10px 0 79px;
+  }
+
+  .hero__body {
+    row-gap: 20px;
+  }
+
+  .hero__media {
+    width: 100%;
+  }
+
+  .hero__img {
+    height: auto;
+  }
+
+  .hero__box {
+    display: none;
+  }
+
+  .hero__heading {
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  .hero__desc {
+    width: 100%;
+  }
+
+  /*============================ Features ============================*/
+  .features {
+    padding: 20px 0 0;
+  }
+
+  .features__heading {
+    width: 100%;
+  }
+
+  .features__desc {
+    width: 100%;
+  }
+
+  /*============================ Popular ============================*/
+  .popular {
+    padding: 70px 0 0;
+  }
+
+  .popular__heading {
+    margin-top: 8px;
+  }
+
+  .popular__desc {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /*============================ Countdown ============================*/
+  .countdown {
+    padding: 200px 0 0;
+  }
+
+  .countdown__body {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  /*============================ Feedback ============================*/
+  .feedback {
+    padding: 70px 0 0;
+  }
+
+  .feedback__comment {
+    width: 100%;
+  }
+
+  /*============================ Admit ============================*/
+  .admit {
+    margin-top: 50px;
+    padding: 60px 0;
+  }
+
+  .admit__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .admit__desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  /*============================ Footer ============================*/
+  .footer__body {
+    padding: 70px 0 20px;
+  }
+
+  .footer__row-top {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .footer__cpr-block {
+    margin-top: 40px;
+  }
+}

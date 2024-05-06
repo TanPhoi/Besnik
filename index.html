@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Besnik</title>
+  </head>
+  <body>
+    <!--========== header ==========-->
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <div class="tablet-mobile-header">
+            <label for="menu-checkbox">
+              <svg
+                class="menu-header__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                width="24px"
+                height="16px"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </label>
+          </div>
+          <!-- logo -->
+          <a href="./">
+            <img
+              src="./assets/icon/ic_logo.svg"
+              alt="Besnik"
+              class="header__logo logo"
+            />
+          </a>
+
+          <!-- nav -->
+          <div class="header__navbar">
+            <ul class="header__navbar-list" id="menu-drawer__navbar-list--pc">
+              <li class="header__navbar-item">
+                <a
+                  href="#!"
+                  class="header__navbar-link--active header__navbar-link"
+                  >Home</a
+                >
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">Features</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">Pricing</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">About</a>
+              </li>
+              <li class="header__navbar-item">
+                <a href="" class="header__navbar-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- cta action -->
+          <div class="header__action">
+            <a href="#!" class="header__action--sign-in">Sign in</a>
+            <a href="#!" class="btn header__action--sign-up">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Tablet/mobile header -->
+    <div class="tablet-mobile-header">
+      <input
+        type="checkbox"
+        name="menu-checkbox"
+        id="menu-checkbox"
+        class="menu-checkbox"
+        hidden
+      />
+
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay"></label>
+
+      <!-- menu content -->
+      <div class="menu-drawer">
+        <!-- menu top -->
+        <div class="menu-drawer__top">
+          <a href="./">
+            <!-- logo -->
+            <img
+              src="./assets/icon/ic_logo.svg"
+              alt="Besnik"
+              class="logo menu-drawer__logo"
+            />
+          </a>
+
+          <!-- icon close -->
+          <label for="menu-checkbox">
+            <svg
+              class="menu-drawer__close"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"
+              />
+            </svg>
+          </label>
+        </div>
+
+        <!-- menu nav mobile-->
+        <ul id="menu-drawer__navbar-list--mobile"></ul>
+        <script>
+          const navPc = document.querySelector("#menu-drawer__navbar-list--pc");
+          const navMobile = document.querySelector(
+            "#menu-drawer__navbar-list--mobile"
+          );
+          navMobile.innerHTML = navPc.innerHTML;
+        </script>
+
+        <!-- separate -->
+        <div class="menu-drawer__separate"></div>
+
+        <div class="menu-drawer__show-mobile">
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-link">Sign In</a>
+          </li>
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-link">Sign Up</a>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__body" data-aos="animate__fadeInLeft">
+            <!-- Hero content -->
+            <div class="hero__content">
+              <img
+                class="hero__image-title"
+                src="./assets/img/img_hero_content.jpg"
+                alt="EASY LEAENING PLATFORM"
+              />
+              <h1 class="hero__heading">Words learner come here.</h1>
+              <p class="desc hero__desc">
+                Build skills with courses, certificates, and get online
+                knowledge from our world-class platform.
+              </p>
+
+              <div class="hero__cta-group">
+                <a href="#!" class="btn hero__btn">Get Started</a>
+                <div class="hero__play-video">
+                  <img src="./assets/icon/ic_play.svg" alt="play video" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero media -->
+            <div class="hero__media" data-aos="animate__fadeInRight">
+              <figure class="hero__image">
+                <img
+                  src="./assets/img/img_hero.jpg"
+                  alt="Words learner come here."
+                  class="hero__img"
+                />
+              </figure>
+
+              <!-- Courses -->
+              <div class="hero__courses hero__box">
+                <img
+                  src="./assets/icon/book.svg"
+                  alt="course icon"
+                  class="hero__course-icon"
+                />
+                <span class="hero__detail">Courses 1000+</span>
+              </div>
+
+              <!-- Schedules -->
+              <div class="hero__schedules hero__box">
+                <span class="hero__detail hero__detail-schedules"
+                  >Schedules</span
+                >
+                <img
+                  src="./assets/icon/schedules-1.svg"
+                  alt="Schedules icon"
+                  class="hero__schedules-icon hero__icon-1"
+                />
+                <img
+                  src="./assets/icon/schedules-2.svg"
+                  alt="Schedules icon"
+                  class="hero__schedules-icon hero__icon-2"
+                />
+                <img
+                  src="./assets/icon/schedules-3.svg"
+                  alt="Schedules icon"
+                  class="hero__schedules-icon hero__icon-3"
+                />
+                <img
+                  src="./assets/icon/schedules-4.svg"
+                  alt="Schedules icon"
+                  class="hero__schedules-icon hero__icon-4"
+                />
+              </div>
+
+              <!-- Student -->
+              <div class="hero__student hero__box">
+                <span class="hero__detail hero__student-detail"
+                  >Our Active Students</span
+                >
+                <div class="hero__ava-list">
+                  <img
+                    src="./assets/img/img_ava_1.jpg"
+                    alt="Our Active Students"
+                    class="hero__img-user user-1"
+                  />
+                  <img
+                    src="./assets/img/img_ava_2.jpg"
+                    alt="Our Active Students"
+                    class="hero__img-user user-2"
+                  />
+                  <img
+                    src="./assets/img/img_ava_3.jpg"
+                    alt="Our Active Students"
+                    class="hero__img-user user-3"
+                  />
+                  <img
+                    src="./assets/img/img_ava_4.jpg"
+                    alt="Our Active Students"
+                    class="hero__img-user user-4"
+                  />
+                  <div class="hero__img-user hero__more">
+                    <span class="hero__more-desc">10K+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features">
+        <div class="container">
+          <div class="features__body">
+            <!-- Features top -->
+            <section class="features__top" data-aos="animate__zoomIn">
+              <p class="features__top-title">F E A T U R E S</p>
+              <h2 class="features__heading heading-lv2">
+                We are providing suitable features for students.
+              </h2>
+              <p class="desc features__desc">
+                Read our awesome feature that is absolutely suit for you.
+                Explore the feature and know the best.
+              </p>
+            </section>
+
+            <!-- Features bottom -->
+            <div class="feature__list">
+              <!-- item 1 -->
+              <article class="feature__item" data-aos="animate__zoomIn">
+                <img
+                  src="./assets/icon/ic_live_class.svg"
+                  alt="Live Class"
+                  class="feature__icon"
+                />
+                <p class="feature__title">Live Class</p>
+                <p class="desc features__item-desc">
+                  We are providing live classes with the best teacher for you
+                </p>
+              </article>
+
+              <!-- item 2 -->
+              <article class="feature__item" data-aos="animate__zoomIn">
+                <img
+                  src="./assets/icon/ic_discuss.svg"
+                  alt="Discuss"
+                  class="feature__icon"
+                />
+                <p class="feature__title">Discuss</p>
+                <p class="desc features__item-desc">
+                  Conversation with teachers or another students about task or
+                  any other thing
+                </p>
+              </article>
+
+              <!-- item 3 -->
+              <article class="feature__item" data-aos="animate__zoomIn">
+                <img
+                  src="./assets/icon/ic_task.svg"
+                  alt="Task"
+                  class="feature__icon"
+                />
+                <p class="feature__title">Task</p>
+                <p class="desc features__item-desc">
+                  We give every of our students task for gathering knowledge at
+                  home
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular -->
+      <section class="popular">
+        <div class="container">
+          <div class="popular__body">
+            <!-- Popular Top -->
+            <section class="popular__content" data-aos="animate__zoomIn">
+              <p class="top-title">F E A T U R E S</p>
+              <h2 class="popular__heading heading-lv2">Popular Courses</h2>
+              <div class="popular__row">
+                <p class="desc popular__desc">
+                  Check out our most poular courses that suit for you. Here you
+                  can find your favourite one.
+                </p>
+
+                <a href="#!" class="popular__more">View All Courses</a>
+              </div>
+            </section>
+
+            <!-- Popular Bottom -->
+            <div class="popular__list">
+              <!-- item 1 -->
+              <article class="popular__item">
+                <figure data-aos="animate__zoomIn">
+                  <img
+                    src="./assets/img/img_web_design.jpg"
+                    alt="Web Design"
+                    class="popular__img"
+                  />
+                </figure>
+
+                <section
+                  class="popular__item-content"
+                  data-aos="animate__bounceInUp"
+                >
+                  <h3 class="popular__item-heading">Web Design</h3>
+                  <p class="desc popular__item-cost">
+                    Fee <span class="popular__item-money">$200</span>
+                  </p>
+                  <p class="desc popular__item-desc">
+                    Web design basic to higer level
+                  </p>
+                  <div class="popular__item-static">
+                    <span>40 Classes</span>
+                    <span>3 Months</span>
+                  </div>
+                </section>
+              </article>
+
+              <!-- item 2 -->
+              <article class="popular__item">
+                <figure data-aos="animate__zoomIn">
+                  <img
+                    src="./assets/img/img_web_developmemnt.jpg"
+                    alt="Web Design"
+                    class="popular__img"
+                  />
+                </figure>
+
+                <section
+                  class="popular__item-content"
+                  data-aos="animate__bounceInUp"
+                >
+                  <h3 class="popular__item-heading">Web Development</h3>
+                  <p class="desc popular__item-cost">
+                    Fee <span class="popular__item-money">$250</span>
+                  </p>
+                  <p class="desc popular__item-desc">
+                    Web development basic to higer level
+                  </p>
+                  <div class="popular__item-static">
+                    <span>30 Classes</span>
+                    <span>3 Months</span>
+                  </div>
+                </section>
+              </article>
+
+              <!-- item 3 -->
+              <article class="popular__item">
+                <figure data-aos="animate__zoomIn">
+                  <img
+                    src="./assets/img/img_ui_ux_design.jpg"
+                    alt="Web Design"
+                    class="popular__img"
+                  />
+                </figure>
+
+                <section
+                  class="popular__item-content"
+                  data-aos="animate__bounceInUp"
+                >
+                  <h3 class="popular__item-heading">UI/UX Design</h3>
+                  <p class="desc popular__item-cost">
+                    Fee <span class="popular__item-money">$350</span>
+                  </p>
+                  <p class="desc popular__item-desc">
+                    UI/UX design basic to higer level
+                  </p>
+                  <div class="popular__item-static">
+                    <span>50 Classes</span>
+                    <span>4 Months</span>
+                  </div>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Countdown -->
+      <section class="countdown">
+        <div class="container">
+          <div class="countdown__body">
+            <!-- item 1 -->
+            <div class="countdown__item" data-aos="animate__fadeInTopLeft">
+              <p class="countdown__static"><strong>100+</strong></p>
+              <p class="desc countdown__desc">Popular Courses</p>
+            </div>
+
+            <!-- item 2 -->
+            <div class="countdown__item" data-aos="animate__zoomIn">
+              <p class="countdown__static"><strong>500+</strong></p>
+              <p class="desc countdown__desc">Skilled Trainer</p>
+            </div>
+
+            <!-- item 3 -->
+            <div class="countdown__item" data-aos="animate__fadeInTopRight">
+              <p class="countdown__static"><strong>1M+</strong></p>
+              <p class="desc countdown__desc">Student Learning</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- feedback -->
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__body">
+            <section class="feedback__content">
+              <img
+                src="./assets/icon/ic_feedback.svg"
+                alt=""
+                class="feedback__icon"
+              />
+              <blockquote class="feedback__comment">
+                “They are the best people. And this is the suitable platform to
+                learn from distance.”
+              </blockquote>
+              <p class="decs feedback__desc-student">
+                <span>Ben Foakes</span>, student.
+              </p>
+              <div class="control feedback__control">
+                <!-- btn back -->
+                <button class="control__btn feedback__btn--back">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M7 13L1 7L7 1"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+
+                <!-- btn next -->
+                <button class="control__btn feedback__btn--next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                  >
+                    <path
+                      d="M7 13L1 7L7 1"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </section>
+
+            <!-- Users -->
+            <img
+              data-aos="animate__rotateIn"
+              src="./assets/img/img_user_1.jpg"
+              alt="student"
+              class="feedback__img feedback__img-1"
+            />
+            <img
+              data-aos="animate__rotateInDownLeft"
+              src="./assets/img/img_user_2.jpg"
+              alt="student"
+              class="feedback__img feedback__img-2"
+            />
+            <img
+              data-aos="animate__rotateInDownLeft"
+              src="./assets/img/img_user_3.jpg"
+              alt="student"
+              class="feedback__img feedback__img-3"
+            />
+            <img
+              data-aos="animate__rotateInDownRight"
+              src="./assets/img/img_user_4.jpg"
+              alt="student"
+              class="feedback__img feedback__img-4"
+            />
+            <img
+              data-aos="animate__rotateInDownRight"
+              src="./assets/img/img_user_5.jpg"
+              alt="student"
+              class="feedback__img feedback__img-5"
+            />
+            <img
+              data-aos="animate__rotateInUpLeft"
+              src="./assets/img/img_user_6.jpg"
+              alt="student"
+              class="feedback__img feedback__img-6"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- admit -->
+      <section class="admit" data-aos="animate__slideInUp">
+        <div class="container">
+          <div class="admit__body">
+            <!-- admit left -->
+            <div class="admit__left">
+              <h2 class="heading-lv2 admit__heading">Ready to Get Admit</h2>
+              <p class="desc admit__desc">
+                Create your account and Boost your Career.
+              </p>
+            </div>
+
+            <!-- admit right -->
+            <div class="admit__right">
+              <a href="#!" class="btn admit__btn">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <!-- footer top -->
+          <div class="footer__row-top">
+            <!-- column 1 -->
+            <div class="footer__column footer__column-hidden">
+              <img
+                src="./assets/icon/ic_logo.svg"
+                alt="Besnik"
+                class="logo footer__logo"
+              />
+            </div>
+
+            <!-- column 2 -->
+            <div class="footer__column">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__list">
+                <li><a href="#!" class="footer__link">About</a></li>
+                <li><a href="#!" class="footer__link">Careers</a></li>
+                <li><a href="#!" class="footer__link">Press</a></li>
+              </ul>
+            </div>
+
+            <!-- column 3 -->
+            <div class="footer__column">
+              <h3 class="footer__title">Community</h3>
+              <ul class="footer__list">
+                <li><a href="#!" class="footer__link">Team Plans</a></li>
+                <li><a href="#!" class="footer__link">Blog</a></li>
+                <li><a href="#!" class="footer__link">Students</a></li>
+                <li><a href="#!" class="footer__link">Schoolarships</a></li>
+              </ul>
+            </div>
+
+            <!-- column 4 -->
+            <div class="footer__column">
+              <h3 class="footer__title">Teaching</h3>
+              <ul class="footer__list">
+                <li><a href="#!" class="footer__link">Become a teacher</a></li>
+                <li><a href="#!" class="footer__link">Teaching academy</a></li>
+              </ul>
+            </div>
+
+            <!-- column 5 -->
+            <div class="footer__column">
+              <h3 class="footer__title">Be social</h3>
+              <ul class="footer__list">
+                <li>
+                  <a href="#!" class="footer__link footer__link-5">
+                    <img
+                      src="./assets/icon/ic_twitter.svg"
+                      alt="Twitter"
+                      class="footer__social-icon"
+                    />
+                    Twitter
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#!" class="footer__link">
+                    <img
+                      src="./assets/icon/ic_facebook.svg"
+                      alt="Facebook"
+                      class="footer__social-icon"
+                    />
+                    Facebook
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#!" class="footer__link">
+                    <img
+                      src="./assets/icon/ic_instagram.svg"
+                      alt="Instagram"
+                      class="footer__social-icon"
+                    />
+                    Instagram
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#!" class="footer__link">
+                    <img
+                      src="./assets/icon/ic_linkedin.svg"
+                      alt="Linkedin"
+                      class="footer__social-icon"
+                    />
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- copyright -->
+          <div class="footer__cpr-block">
+            <p class="footer__copyright">
+              © Copyright 2020 by Mayad Ahmed. All right reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 800,
+        mirror: false,
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
+      });
+    </script>
+  </body>
+</html>
